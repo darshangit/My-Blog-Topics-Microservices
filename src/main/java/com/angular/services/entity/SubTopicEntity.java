@@ -17,12 +17,12 @@ public class SubTopicEntity {
     private String subTopicStatus;
     private Integer subTopicListingid;
 
-    @Id
     @Column(name="SUB_TOPIC_ID")
     public Integer getSubTopicsId() {
         return subTopicsId;
     }
 
+    @Id
     @Column(name="SUB_TOPIC_NAME")
     public String getSubTopicName() {
         return subTopicName;

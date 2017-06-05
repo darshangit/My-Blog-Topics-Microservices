@@ -17,12 +17,13 @@ public class SubListingEntity {
     private String subListingStatus;
     private String listingLinks;
 
-    @Id
+
     @Column(name = "SUB_LISTING_ID")
     public Integer getSubListingUUID() {
         return subListingUUID;
     }
 
+    @Id
     @Column(name="LISTING_NAME")
     public String getSubListingName() {
         return subListingName;

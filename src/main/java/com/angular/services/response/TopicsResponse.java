@@ -13,6 +13,11 @@ public class TopicsResponse {
      private String subTopicName;
      private List<SubListingEntity> subListings;
 
+    public TopicsResponse(String subTopicName, List<SubListingEntity> subListings) {
+        this.subTopicName = subTopicName;
+        this.subListings = subListings;
+    }
+
     public String getSubTopicName() {
         return subTopicName;
     }

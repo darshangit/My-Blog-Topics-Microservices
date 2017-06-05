@@ -12,5 +12,5 @@ import java.util.List;
 @Repository
 public interface SubTopicDao extends JpaRepository<SubTopicEntity,Integer> {
 
-    List<SubTopicEntity> findBySubTopicsIdAndSubTopicStatusEquals(Integer integers,String subTopicStatus);
+    List<SubTopicEntity> findBySubTopicsIdAndSubTopicStatusEquals(Integer subTopicsId,String subTopicStatus);
 }
