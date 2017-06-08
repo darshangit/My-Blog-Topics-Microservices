@@ -26,5 +26,4 @@ public class TopicsController {
     public List<TopicsResponse> getSubtopics(@PathVariable Integer subtopicId){
         return topicService.getSubTopicResponse(subtopicId);
     }
-
 }
