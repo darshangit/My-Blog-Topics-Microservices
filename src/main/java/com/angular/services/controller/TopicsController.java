@@ -22,7 +22,7 @@ public class TopicsController {
         return topicService.getAllActiveTopics();
     }
 
-    @GetMapping("/api/subTopics/{subtopicId}")
+    @GetMapping("/topics/subTopics/{subtopicId}")
     public List<TopicsResponse> getSubtopics(@PathVariable Integer subtopicId){
         return topicService.getSubTopicResponse(subtopicId);
     }
