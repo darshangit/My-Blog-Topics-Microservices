@@ -1,5 +1,7 @@
 package com.angular.services.controller;
 
+import com.angular.services.request.SubListingRequest;
+import com.angular.services.response.ListingResponse;
 import com.angular.services.response.MainTopicResponse;
 import com.angular.services.response.TopicsResponse;
 import com.angular.services.service.TopicService;
@@ -25,5 +27,10 @@ public class TopicsController {
     @GetMapping("/topics/subTopics/{subtopicId}")
     public List<TopicsResponse> getSubtopics(@PathVariable Integer subtopicId){
         return topicService.getSubTopicResponse(subtopicId);
+    }
+
+    @PostMapping(value = "/topics/getListings",consumes = "application/json",produces = "application/json")
+    public List<ListingResponse> getListingDetails(@RequestBody SubListingRequest subListingRequest){
+        return topicService.getListingsDetails(subListingRequest.getJsonPath());
     }
 }
