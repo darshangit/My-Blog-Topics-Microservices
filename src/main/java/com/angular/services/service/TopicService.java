@@ -5,6 +5,7 @@ import com.angular.services.dao.MainTopicsDao;
 import com.angular.services.dao.SubListingDao;
 import com.angular.services.dao.SubTopicDao;
 import com.angular.services.entity.MainTopicsEntity;
+import com.angular.services.entity.SubListingEntity;
 import com.angular.services.entity.SubTopicEntity;
 import com.angular.services.response.ListingResponse;
 import com.angular.services.response.MainTopicResponse;
@@ -72,5 +73,9 @@ public class TopicService {
             e.printStackTrace();
         }
         return listingResponses;
+    }
+
+    public List<SubListingEntity> getAllSubListings() {
+        return subListingDao.findBySubListingStatusEquals(TopicConstants.ACTIVE_STATUS);
     }
 }

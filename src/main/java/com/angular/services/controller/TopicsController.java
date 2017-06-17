@@ -1,5 +1,6 @@
 package com.angular.services.controller;
 
+import com.angular.services.entity.SubListingEntity;
 import com.angular.services.request.SubListingRequest;
 import com.angular.services.response.ListingResponse;
 import com.angular.services.response.MainTopicResponse;
@@ -33,4 +34,11 @@ public class TopicsController {
     public List<ListingResponse> getListingDetails(@RequestBody SubListingRequest subListingRequest){
         return topicService.getListingsDetails(subListingRequest.getJsonPath());
     }
+
+    @GetMapping("/topics/sublistings")
+    public List<SubListingEntity> getAllSubListings(){
+        return topicService.getAllSubListings();
+    }
+
+
 }

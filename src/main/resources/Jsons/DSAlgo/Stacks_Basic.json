@@ -3,11 +3,11 @@
     "title":"Stacks : What is it?",
     "preDescription":null,
     "note":null,
-    "mainDescription":["It is an important Datastructure. Each of the developer in this ",
+    "mainDescription":["It is an important Datastructure. Each of the developer in this universe would have heard of a stacktrace(If not , well you just did). Well why is it calledEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktrace",
       "universe would have heard of a stacktrace(If not , well you just did). Well why is it called",
       "a stack trace? that is because the it shows to the trace from the most recent exception all the way back to the origin."],
-    "image":null,
-    "code":null,
+    "image":"java9.jpg",
+    "code":["a+b * c"," var c = new pb();","c.alksd() { system.out.println}"],
     "postDescription":[]
   },
   {
