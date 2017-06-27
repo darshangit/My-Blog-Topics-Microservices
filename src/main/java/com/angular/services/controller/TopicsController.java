@@ -1,10 +1,12 @@
 package com.angular.services.controller;
 
+import com.angular.services.entity.CarousalEntity;
 import com.angular.services.entity.SubListingEntity;
 import com.angular.services.request.SubListingRequest;
 import com.angular.services.response.ListingResponse;
 import com.angular.services.response.MainTopicResponse;
 import com.angular.services.response.TopicsResponse;
+import com.angular.services.service.CarousalService;
 import com.angular.services.service.TopicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +21,9 @@ public class TopicsController {
 
     @Autowired
     TopicService topicService;
+
+    @Autowired
+    CarousalService carousalService;
 
     @GetMapping("/topics/mainTopics")
     public List<MainTopicResponse> getAllTopics(){
@@ -40,5 +45,9 @@ public class TopicsController {
         return topicService.getAllSubListings();
     }
 
+    @GetMapping("/topics/carousal")
+    public List<CarousalEntity> getCarousals(){
+        return carousalService.getAllActiveACarousals();
+    }
 
 }
