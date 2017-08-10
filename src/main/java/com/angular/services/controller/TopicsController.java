@@ -19,6 +19,7 @@ import java.util.List;
  * Created by Darsh on 6/4/2017.
  */
 @RestController
+@CrossOrigin("*")
 public class TopicsController {
 
     @Autowired
