@@ -26,7 +26,7 @@
     "4. Stash : This is temporary storage area . We will discuss stash in details later on."]
   },
   {
-    "title":"Cash Course on the workings",
+    "title":"Crash Course on the workings",
     "preDescription":null,
     "note":null,
     "mainDescription":["Before we get into Git installation, just a few words on how the area's are used.",
