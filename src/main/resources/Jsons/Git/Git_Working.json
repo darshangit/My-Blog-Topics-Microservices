@@ -60,5 +60,15 @@
     "HEAD~1 represents parent minus 1 check in",
     "Here we are finding the difference between parent-1 and parent , which shows 1 added line",
     "Use commit id or HEAD , whichever you are comfortable with"]
+  },
+  {
+    "title":"Conclusion",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["There are GUI's present which would aid in git operations(Mainly diff of large files), But I would suggest command line for all other commands as it is very powerful and easy to use.",
+      "These commands would be enough to get you started. For more advanced usages you can look at the advanced git tab. You can use breadcrumb above to navigate."],
+    "image":null,
+    "code":null,
+    "postDescription":null
   }
 ]
