@@ -8,7 +8,7 @@
     "If we want to create a git repository in Git-demo folder, open git-bash prompt in that folder and type the command git init",
     "This will create a .git folder, which is our repository"],
     "image":"git/git_add.PNG",
-    "code":null,
+    "code":["git init"],
     "postDescription":["From the above snapshot we see how the git init has created a new .git folder"]
   },
   {
@@ -20,7 +20,7 @@
     "Well its right, the file is just created in the working area but it has not been sent to the staging area yet.",
     "git status would yield the below result"],
     "image":"git/git_status.PNG",
-    "code":null,
+    "code":["git status"],
     "postDescription":null
   },
   {
@@ -30,7 +30,7 @@
     "mainDescription":["git add command would add the specified files to the staging area",
     "Running git add command and checking git status would show the file is in green which means git recognize's this file now(It will be tracked further on)."],
     "image":"git/git_add2.PNG",
-    "code":null,
+    "code":["git add"],
     "postDescription":null
   },
   {
@@ -42,7 +42,7 @@
     "git log gives the history of the actions performed on the repository",
     "Running the above commands would yield the below shown results:"],
     "image":"git/git_commit.PNG",
-    "code":null,
+    "code":["git commit -m \"Inital Commit bla bla bla\""],
     "postDescription":["The git log shows the commit id , which is unique",
       "The first 6 digits are be used for tracking and checking the differences between the files"]
   },
@@ -60,6 +60,29 @@
     "HEAD~1 represents parent minus 1 check in",
     "Here we are finding the difference between parent-1 and parent , which shows 1 added line",
     "Use commit id or HEAD , whichever you are comfortable with"]
+  },
+  {
+    "title":"Git Command: push",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["Till now every command is working with local repository.",
+      "Consider we need these changes to be reflected in a remote repository in Github. In that case git push would be the one to go with."],
+    "image":"git/git_push.PNG",
+    "code":["1.Navigate https://github.com and create a new repository. As shown above",
+    "2.Copy the repository url and run the command :  git remote add origin <your repository URL> . Here origin is just a name.this can be anything you like",
+    "3.Run the command : git push origin master . This would push the local changes to the repository."],
+    "postDescription":null
+  },
+  {
+    "title":"Git Command: pull",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["To obtain any remote changes from the repository we do a git pull",
+    "But before that we need to set the branch we need to pull from. In our case we will keep it master. Setting of the specifc branch can be done using the command: ",
+    "git branch --set-upstream-to=origin/<Your Branch url if present> master"],
+    "image":null,
+    "code":["git branch --set-upstream-to=origin/master","git pull"],
+    "postDescription":null
   },
   {
     "title":"Conclusion",
