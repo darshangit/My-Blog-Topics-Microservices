@@ -27,7 +27,7 @@
   {
     "title":"Git Rebase",
     "preDescription":["Git rebase puts the commit on top of the head."],
-    "note":null,
+    "note":"Never Rebase a Shared Commit",
     "mainDescription":["Shown in the diagram I have 2 branches: master and branch_1",
     "Consider branch_1 has additional commits , then doing a git rebase master , would put the commit on top of the master head",
     "Then if we come to master and do : git rebase branch1 , the head would fast-forward as shown below"],
