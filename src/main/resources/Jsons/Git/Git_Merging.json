@@ -1,35 +1,14 @@
 [
   {
-    "title":"Stacks : What is it?",
+    "title":"Git Merge",
     "preDescription":null,
     "note":null,
-    "mainDescription":["It is an important Datastructure. Each of the developer in this universe would have heard of a stacktrace(If not , well you just did). Well why is it calledEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktraceEach of the developer in this universe would have heard of a stacktrace",
-      "universe would have heard of a stacktrace(If not , well you just did). Well why is it called",
-      "a stack trace? that is because the it shows to the trace from the most recent exception all the way back to the origin."],
-    "image":"java9.jpg",
-    "code":["a+b * c"," var c = new pb();","c.alksd() { system.out.println}"],
-    "postDescription":[]
-  },
-  {
-    "title":"Stack Usages",
-    "preDescription":null,
-    "note":null,
-    "mainDescription":["Consider a normal day where you are going to wake up at 6" ,
-      "hit the gym at 630, get the kids to school at 8, go to office at 9.All this is",
-      "planned and place in your brain or a calender as a stack which you keep checking out as you go in order.",
-      "Well the same use is the stacks in the real world.You keep the priority items on top of the stack and keep on working out till the stack is empty."],
-    "image":null,
-    "code":null,
-    "postDescription":null
-  },
-  {
-    "title":"Implementations",
-    "preDescription":null,
-    "note":null,
-    "mainDescription":["Stacks can be implemented in 3 ways :",
-      "1.Using Simple Arrays","2.using Dynamic Arrays","3.Using Linked Lists"],
-    "image":null,
-    "code":null,
-    "postDescription":null
+    "mainDescription":["Consider the below example. We have the master pointing at 51bfea0. We need to merge it with awesome_branch.",
+      "We will use the git merge command. If any conflicts arise, they need to be resolved and git will tell that.",
+      "Once merge we can see the head and the awesome_branch pointing to the same hash.",
+      "If awesome_branch is not needed anymore we can just delete it directly with git branch -d command."],
+    "image":"git/git_merging.PNG",
+    "code":["git merge <branch_name_here>"],
+    "postDescription":["git merge is used day in and day out in real environment and is one of the most useful tools."]
   }
 ]
