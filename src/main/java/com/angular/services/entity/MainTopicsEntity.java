@@ -15,6 +15,7 @@ public class MainTopicsEntity implements Serializable{
     private String imgSrc;
     private String status;
     private Integer subTopicId;
+    private Integer orderNumber;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -43,6 +44,11 @@ public class MainTopicsEntity implements Serializable{
         return subTopicId;
     }
 
+    @Column(name="ORDER_NUMBER")
+    public Integer getOrderNumber() {
+        return orderNumber;
+    }
+
     public void setUUID(Integer UUID) {
         this.UUID = UUID;
     }
@@ -61,5 +67,9 @@ public class MainTopicsEntity implements Serializable{
 
     public void setSubTopicId(Integer subTopicId) {
         this.subTopicId = subTopicId;
+    }
+
+    public void setOrderNumber(Integer orderNumber) {
+        this.orderNumber = orderNumber;
     }
 }

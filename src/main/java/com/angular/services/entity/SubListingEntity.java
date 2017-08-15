@@ -16,6 +16,7 @@ public class SubListingEntity {
     private String subListingName;
     private String subListingStatus;
     private String listingLinks;
+    private Integer orderNumber;
 
 
     @Column(name = "SUB_LISTING_ID")
@@ -39,6 +40,11 @@ public class SubListingEntity {
         return listingLinks;
     }
 
+    @Column(name="ORDER_NUMBER")
+    public Integer getOrderNumber() {
+        return orderNumber;
+    }
+
     public void setSubListingUUID(Integer subListingUUID) {
         this.subListingUUID = subListingUUID;
     }
@@ -53,5 +59,9 @@ public class SubListingEntity {
 
     public void setListingLinks(String listingLinks) {
         this.listingLinks = listingLinks;
+    }
+
+    public void setOrderNumber(Integer orderNumber) {
+        this.orderNumber = orderNumber;
     }
 }

@@ -12,6 +12,6 @@ import java.util.List;
 @Repository
 public interface SubListingDao extends JpaRepository<SubListingEntity,Long>{
 
-    List<SubListingEntity> findBySubListingUUIDAndSubListingStatusEquals(Integer subListingId,String subListingStatus);
-    List<SubListingEntity> findBySubListingStatusEquals(String subListingStatus);
+    List<SubListingEntity> findBySubListingUUIDAndSubListingStatusEqualsOrderByOrderNumberAsc(Integer subListingId,String subListingStatus);
+    List<SubListingEntity> findBySubListingStatusEqualsOrderByOrderNumberAsc(String subListingStatus);
 }

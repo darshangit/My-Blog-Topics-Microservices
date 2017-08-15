@@ -37,7 +37,7 @@ public class TopicService {
     MainTopicsDao mainTopicsDao;
 
     public List<MainTopicResponse> getAllActiveTopics(){
-        List<MainTopicsEntity> mainTopicResponses =  mainTopicsDao.findByStatus(TopicConstants.ACTIVE_STATUS);
+        List<MainTopicsEntity> mainTopicResponses =  mainTopicsDao.findByStatusEqualsOrderByOrderNumberAsc(TopicConstants.ACTIVE_STATUS);
 
         final List<MainTopicResponse> responseList = new ArrayList<>();
 
@@ -55,10 +55,10 @@ public class TopicService {
 
     public List<TopicsResponse> getSubTopicResponse(Integer subTopicId){
 
-        List<SubTopicEntity> listOfSubTopics = subTopicDao.findBySubTopicsIdAndSubTopicStatusEquals(subTopicId, TopicConstants.ACTIVE_STATUS);
+        List<SubTopicEntity> listOfSubTopics = subTopicDao.findBySubTopicsIdAndSubTopicStatusEqualsOrderByOrderNumberAsc(subTopicId, TopicConstants.ACTIVE_STATUS);
 
         List<TopicsResponse> responseList = listOfSubTopics.stream().map(subTopicEntity ->
-                new TopicsResponse(subTopicEntity.getSubTopicName(),subListingDao.findBySubListingUUIDAndSubListingStatusEquals(subTopicEntity.getSubTopicListingid(),TopicConstants.ACTIVE_STATUS))
+                new TopicsResponse(subTopicEntity.getSubTopicName(),subListingDao.findBySubListingUUIDAndSubListingStatusEqualsOrderByOrderNumberAsc(subTopicEntity.getSubTopicListingid(),TopicConstants.ACTIVE_STATUS))
         ).collect(Collectors.toList());
         return responseList;
     }
@@ -76,6 +76,6 @@ public class TopicService {
     }
 
     public List<SubListingEntity> getAllSubListings() {
-        return subListingDao.findBySubListingStatusEquals(TopicConstants.ACTIVE_STATUS);
+        return subListingDao.findBySubListingStatusEqualsOrderByOrderNumberAsc(TopicConstants.ACTIVE_STATUS);
     }
 }

@@ -16,6 +16,7 @@ public class SubTopicEntity {
     private String subTopicName;
     private String subTopicStatus;
     private Integer subTopicListingid;
+    private Integer orderNumber;
 
     @Column(name="SUB_TOPIC_ID")
     public Integer getSubTopicsId() {
@@ -38,6 +39,11 @@ public class SubTopicEntity {
         return subTopicListingid;
     }
 
+    @Column(name="ORDER_NUMBER")
+    public Integer getOrderNumber() {
+        return orderNumber;
+    }
+
     public void setSubTopicsId(Integer subTopicsId) {
         this.subTopicsId = subTopicsId;
     }
@@ -52,5 +58,9 @@ public class SubTopicEntity {
 
     public void setSubTopicListingid(Integer subTopicListingid) {
         this.subTopicListingid = subTopicListingid;
+    }
+
+    public void setOrderNumber(Integer orderNumber) {
+        this.orderNumber = orderNumber;
     }
 }
