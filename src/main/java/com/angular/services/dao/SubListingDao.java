@@ -10,7 +10,7 @@ import java.util.List;
  * Created by Darsh on 6/4/2017.
  */
 @Repository
-public interface SubListingDao extends JpaRepository<SubListingEntity,Long>{
+public interface SubListingDao extends JpaRepository<SubListingEntity,String>{
 
     List<SubListingEntity> findBySubListingUUIDAndSubListingStatusEqualsOrderByOrderNumberAsc(Integer subListingId,String subListingStatus);
     List<SubListingEntity> findBySubListingStatusEqualsOrderByOrderNumberAsc(String subListingStatus);

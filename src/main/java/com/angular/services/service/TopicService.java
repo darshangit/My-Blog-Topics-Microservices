@@ -76,6 +76,11 @@ public class TopicService {
     }
 
     public List<SubListingEntity> getAllSubListings() {
-        return subListingDao.findBySubListingStatusEqualsOrderByOrderNumberAsc(TopicConstants.ACTIVE_STATUS);
+        List<SubListingEntity> subListingEntities =  subListingDao.findBySubListingStatusEqualsOrderByOrderNumberAsc(TopicConstants.ACTIVE_STATUS);
+        return  subListingEntities;
+    }
+
+    public SubListingEntity getAllSubListingByName(String subListingName) {
+        return subListingDao.findOne(subListingName);
     }
 }

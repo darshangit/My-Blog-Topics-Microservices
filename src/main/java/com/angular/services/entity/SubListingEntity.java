@@ -1,9 +1,6 @@
 package com.angular.services.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by Darsh on 6/4/2017.
@@ -17,7 +14,7 @@ public class SubListingEntity {
     private String subListingStatus;
     private String listingLinks;
     private Integer orderNumber;
-
+    private SubListingPrevNextEntity subListingPrevNextEntity;
 
     @Column(name = "SUB_LISTING_ID")
     public Integer getSubListingUUID() {
@@ -45,6 +42,12 @@ public class SubListingEntity {
         return orderNumber;
     }
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="PREV_NEXT_ID")
+    public SubListingPrevNextEntity getSubListingPrevNextEntity() {
+        return subListingPrevNextEntity;
+    }
+
     public void setSubListingUUID(Integer subListingUUID) {
         this.subListingUUID = subListingUUID;
     }
@@ -63,5 +66,9 @@ public class SubListingEntity {
 
     public void setOrderNumber(Integer orderNumber) {
         this.orderNumber = orderNumber;
+    }
+
+    public void setSubListingPrevNextEntity(SubListingPrevNextEntity subListingPrevNextEntity) {
+        this.subListingPrevNextEntity = subListingPrevNextEntity;
     }
 }

@@ -60,4 +60,9 @@ public class TopicsController {
     public List<BlogsEntity> getBlogs(){
         return blogService.getActiveBlogs();
     }
+
+    @GetMapping("/topics/sublistings/{subListingName}")
+    public SubListingEntity getSubListingOnSubListingId(@PathVariable String subListingName){
+        return topicService.getAllSubListingByName(subListingName);
+    }
 }
