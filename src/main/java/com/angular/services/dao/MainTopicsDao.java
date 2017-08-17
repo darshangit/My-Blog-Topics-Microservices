@@ -11,5 +11,5 @@ import java.util.List;
  */
 @Repository
 public interface MainTopicsDao extends JpaRepository<MainTopicsEntity, Long> {
-    List<MainTopicsEntity> findByStatusEqualsOrderByOrderNumberAsc(String status);
+    List<MainTopicsEntity> findByStatusInOrderByOrderNumberAsc(List<String> status);
 }

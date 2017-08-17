@@ -1,12 +1,12 @@
 [
   {
     "title":"Git : Introduction",
-    "preDescription":["Git has come a long way in being one of the most used distributed version control system (DVCS). It is widely used and is one of the favourite among the developers community.",
+    "preDescription":["Git has come a long way in being one of the most used distributed version control system (DVCS). It has a wide userbase and is one of the favourite among the developers community.",
     "Other DVCS which are widely used are BitKeeper, Mercurial, Bazaar.",
     "Git's inception is quite interesting. Git was created by Linus Torvalds. ( Yup!!! the creator of the awesome Linux OS).",
-    "The Linux kernal team was using Bitkeeper for version control till 2005, but Bitkeeper decided to stop giving license's which resulted in creation of our beloved Git.",
+    "The Linux kernal team was using Bitkeeper for version-control till 2005, but Bitkeeper decided to stop giving license's which resulted in creation of our beloved Git.",
     "Git is written in C and Perl and runs on almost all the OS, all that I know of.",
-    "Well, that's enough of background let us dive deep into the world of Git and know its working."],
+    "Well, that's enough of background, let us dive deep into the world of Git and know its working."],
     "note":null,
     "mainDescription":null,
     "image":null,
@@ -23,16 +23,16 @@
     "postDescription":["1. Working Area : It is the place where our actual code resides.",
     "2. Repository : It is the repository maintained by Git and where our code will be present safe.",
     "3. Staging area or Index : Git use's this area to do any kind of operation between the working area and the repository.",
-    "4. Stash : This is temporary storage area . We will discuss stash in details later on."]
+    "4. Stash : This is temporary storage area."]
   },
   {
-    "title":"Crash Course on the workings",
+    "title":"First Step",
     "preDescription":null,
     "note":null,
     "mainDescription":["Before we get into Git installation, just a few words on how the area's are used.",
-      "Consider we have an hello world project with helloworld.txt : This helloworld.txt is in the working area.",
-    "If we want to commit this to the repository, we would need to do git add helloworld.txt first : This would move helloworld.txt to staging or index area.",
-    "Once it is in the staging area, doing git commit would send the helloworld.txt to the Repository."],
+      "Consider we have a hello world project with helloworld.txt : This helloworld.txt is in the working area.",
+    "If we want to commit this to the repository, we would need to do <-- git add helloworld.txt --> first : This would move helloworld.txt to staging(Also known as index area).",
+    "Once in the staging area, doing <-- git commit --> would send the helloworld.txt to the Repository."],
     "image":"git/git_area_synopsis.PNG",
     "code":null,
     "postDescription":["Well hope that is clear, let's move on to how to install git !!!"]

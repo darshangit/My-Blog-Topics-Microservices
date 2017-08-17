@@ -6,4 +6,5 @@ package com.angular.services.constants;
 public class TopicConstants {
 
     public static final String ACTIVE_STATUS = "ACTIVE";
+    public static final String COMING_SOON = "COMING_SOON";
 }

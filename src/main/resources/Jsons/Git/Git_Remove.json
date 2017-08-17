@@ -3,7 +3,7 @@
     "title":"Git remove : Individual File(s)",
     "preDescription":null,
     "note":null,
-    "mainDescription":["If we need to remove a file from git , it is striaght forward. In the below example if we need to remove git_text.txt",
+    "mainDescription":["If we need to remove a file from git, it is straight forward. In the below example if we need to remove git_text.txt:",
     "1. rm -rf git_text.txt","2. git add -A","3. git commit -m \"your comments here\" "],
     "image":"git/git_rename.PNG",
     "code":null,
@@ -13,9 +13,9 @@
     "title":"Git Remove : Branch",
     "preDescription":null,
     "note":null,
-    "mainDescription":["If we want remove a branch , the command is : git branch -d <branch_name> .",
+    "mainDescription":["If we need to remove a branch, the command is : <-- git branch -d <branch_name> -->.",
     "A thing to note here if some merges are pending with the master, then git will show an error.",
-    "For force deletion use: git branch -D <branch_name>"],
+    "For force deletion use: <-- git branch -D <branch_name> -->."],
     "image":"git/git_branch_delete.PNG",
     "code":["git branch -d <branch_name>","OR","git branch -D <branch_name> (Force deletion)"],
     "postDescription":null
@@ -24,16 +24,16 @@
     "title":"Git Rename : Individual File(s)",
     "preDescription":null,
     "note":null,
-    "mainDescription":["To Rename files, just use the mv command followed by git add -A command.","Check the example below for clarity"],
+    "mainDescription":["To Rename files, just use the mv command followed by <-- git add -A --> command.","Check the example below for clarity."],
     "image":"git/git_remove.PNG",
     "code":["mv file1 file2","git add -A","git commit -m \"put your message\""],
-    "postDescription":["We can see that the once git add -A is done, git actually recognizes it as a renamed file. (Git is Invincible)"]
+    "postDescription":["We can see that the once git add -A is done, git actually recognizes it as a renamed file(Clever indeed)."]
   },
   {
     "title":"Git Rename : Branch",
     "preDescription":null,
     "note":null,
-    "mainDescription":["To Rename a branch, use the git branch -m","Check the example below for clarity"],
+    "mainDescription":["To Rename a branch, use the <-- git branch -m -->.","Check the example below for clarity."],
     "image":"git/git_branch_rename.PNG",
     "code":["git branch -m presentBranchName newBranchname"],
     "postDescription":null

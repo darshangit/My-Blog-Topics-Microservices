@@ -1,14 +1,14 @@
 [
   {
-    "title":"Git revert",
+    "title":"Git Revert",
     "preDescription":null,
     "note":null,
     "mainDescription":["It is one of the most safest commands out there.",
-    "Unlike rebase command which plays with the git history, the revert always creates a new commit object.",
-    "Consider the example below, if we want to revert the last commit, we would do git revert 66cc41f.",
-    "This would revert the changes and would be considered as a new commit. If any conflict is present we would have to resolve it."],
+    "Unlike rebase which modifies git history, revert always creates a new commit object.",
+    "Consider the example below, if we want to revert the last commit, we would do <-- git revert 66cc41f -->.",
+    "This would revert the changes and would be considered as a new commit. If any conflicts are present, git will prompt for resolution."],
     "image":"git/git_reversal.PNG",
     "code":["git revert 66cc41f"],
-    "postDescription":["As you can see the head is now moved to 1be721c , which is the reversal commit."]
+    "postDescription":["As you can see the head is now moved to 1be721c , which is the new reversal commit."]
   }
 ]

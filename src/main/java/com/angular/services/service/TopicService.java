@@ -37,7 +37,12 @@ public class TopicService {
     MainTopicsDao mainTopicsDao;
 
     public List<MainTopicResponse> getAllActiveTopics(){
-        List<MainTopicsEntity> mainTopicResponses =  mainTopicsDao.findByStatusEqualsOrderByOrderNumberAsc(TopicConstants.ACTIVE_STATUS);
+
+        List<String> topicsStatus = new ArrayList<>();
+        topicsStatus.add(TopicConstants.ACTIVE_STATUS);
+        topicsStatus.add(TopicConstants.COMING_SOON);
+
+        List<MainTopicsEntity> mainTopicResponses =  mainTopicsDao.findByStatusInOrderByOrderNumberAsc(topicsStatus);
 
         final List<MainTopicResponse> responseList = new ArrayList<>();
 

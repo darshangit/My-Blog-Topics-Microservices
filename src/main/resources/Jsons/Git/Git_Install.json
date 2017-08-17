@@ -3,16 +3,16 @@
     "title":"Git Installation on windows",
     "preDescription":null,
     "note":null,
-    "mainDescription":["To install git on windows, just download the Git exe from below location and install"],
+    "mainDescription":["To install git on windows, just download the Git exe from below location and install."],
     "image":null,
     "code":["https://git-for-windows.github.io/"],
-    "postDescription":["You will get a nice Git bash and Git Gui"]
+    "postDescription":["A nice Git bash and Git Gui will be available on right-click."]
   },
   {
     "title":"Git Installation on Linux",
     "preDescription":null,
     "note":null,
-    "mainDescription":["As there are different linux distros, the commands vary a bit"],
+    "mainDescription":["As there are different linux distros, the commands vary a bit."],
     "image":null,
     "code":["For Fedora: yum install git-core",
     "For Debian/Ubuntu: apt-get-install git-core"],
@@ -22,7 +22,7 @@
     "title":"Git Installation on Mac OSX",
     "preDescription":null,
     "note":null,
-    "mainDescription":["To install git on MAC OSX, just download the Git DMG from below location and install "],
+    "mainDescription":["To install git on MAC OSX, just download the Git DMG from below location and install."],
     "image":null,
     "code":["https://git-scm.com/download/mac"],
     "postDescription":null

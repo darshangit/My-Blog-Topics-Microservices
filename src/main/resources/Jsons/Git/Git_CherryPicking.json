@@ -4,10 +4,10 @@
     "preDescription":null,
     "note":null,
     "mainDescription":["As the name suggests, Git gives us the ability to cherry pick or single out the commits and plug it in with our master/branch.",
-    "Consider the sample.",
+    "Consider this sample.",
     "1. We have awesome_branch. We create and add one line to cherryPicking1.txt and commit with hash: 7ca4bed.",
-    "2. We add a second line to cherryPicking1.txt and commit with hash: 2ab8aba.",
-    "3. Now switch to master and do a git cherry-pick on 7ca4bed , we see the file created with only 1 line (The first we added in cherryPicking.txt)."],
+    "2. Add a second line to cherryPicking1.txt and commit with hash: 2ab8aba.",
+    "3. Now switch to master and do a <-- git cherry-pick --> on 7ca4bed, we see the file created with only 1 line (The first line added in cherryPicking1.txt)."],
     "image":"git/git-cherrypick.PNG",
     "code":["git cherry-pick 7ca4bed"],
     "postDescription":["This command is mainly used to do patch release's, where we only put the changes in a particular commit,no more no less."]
