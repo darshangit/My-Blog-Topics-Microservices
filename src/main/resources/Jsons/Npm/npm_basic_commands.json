@@ -1,0 +1,81 @@
+[
+  {
+    "title":"NPM : Init",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["This command gives an interactive way to create our package.json file.",
+    "If you don't want to change any values , just press Enter OR give the input(s) as you like.",
+    "The below example will make it clear."],
+    "image":"npm_init.PNG",
+    "code":["npm init"],
+    "postDescription":["we can see how npm interactively communicates and lets us know what is possible as input and what is not.",
+      "If you want a default package.json then : <-- npm init --yes --> would do the magic."]
+  },
+  {
+    "title":"NPM : Install",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["This command scans our package.json and installs all the dependencies under the node_modules directory."],
+    "image":"",
+    "code":["npm install"],
+    "postDescription":null
+  },
+  {
+    "title":"NPM : Start",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["Usually the start command is what we usually give in the package.json.",
+    "It is used to get our project running."],
+    "image":"npm_start.PNG",
+    "code":["npm start"],
+    "postDescription":["In the above snapshot we can see the test script. Similarly we will have the action for start as well."]
+  },
+  {
+    "title":"NPM : Help",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["Help is pretty cool in NPM.",
+    "To Know more about a particular command : <-- npm <command_name> -h -->.",
+    "One other way to do this is by : <-- npm help <command_name> --> , This will open up the official help file of the command."],
+    "image":null,
+    "code":["npm install -h","npm help install"],
+    "postDescription":null
+  },
+  {
+    "title":"NPM : Search Help",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["If you want to search across the help pages in npm then : <-- npm help-search <search_string_here> -->."],
+    "image":"npm_help.PNG",
+    "code":["npm help-search update"],
+    "postDescription":null
+  },
+  {
+    "title":"NPM : Set Defaults",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["We can set the default values across npm which will be used during npm init.",
+    "For exampleL author_name,author_email,license can be set to default values."],
+    "image":null,
+    "code":["npm set init-author-name 'Dash' ","npm set init_author-email 'asdasd@asdasd.com' "],
+    "postDescription":["Post this if we do npm init on any project we will have the default values set in package.json."]
+  },
+  {
+    "title":"NPM : Get Defaults",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["To get the value of a specific default setting: <-- npm get <default_name> -->."],
+    "image":"npm_get.PNG",
+    "code":["npm get init-author-name"],
+    "postDescription":null
+  },
+  {
+    "title":"NPM : Remove Defaults",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["To remove the default values set above used: <-- npm config delete <default_name> -->."],
+    "image":null,
+    "code":["npm config delete init-author-name"],
+    "postDescription":["These default setting's can be found under: .npmrc"]
+  }
+]
