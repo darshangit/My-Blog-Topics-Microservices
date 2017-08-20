@@ -1,0 +1,46 @@
+[
+  {
+    "title":"NPM : Create account in Npm",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["Login to https://www.npmjs.com and create an account if you do not have already"],
+    "image":null,
+    "code":null,
+    "postDescription":null
+  },
+  {
+    "title":"NPM : Add user to local",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["With the account creation done. Go to the project you want to publish and do : npm adduser",
+    "This will prompt for username/password/email. Fill in and the user would be added in .npmrc ."],
+    "image":null,
+    "code":["npm adduser"],
+    "postDescription":null
+  },
+  {
+    "title":"NPM : Publish",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["To publish first we need to push the project to github. Once done. Type: npm publish . Voila. Its done.",
+    "For confirmation go and find the package on https://www.npmjs.com and it would be available."],
+    "image":null,
+    "code":["npm publish"],
+    "postDescription":null
+  },
+  {
+    "title":"NPM : Publish Update",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["Consider you have done some minor updates to the project.",
+    "Push it to Git repository.",
+    "Type: npm version patch",
+    "That's it the patch version will be updated.",
+    "Similarly we can update the major or minor versions depending on our change."],
+    "image":null,
+    "code":["npm version patch",
+    "npm version major",
+    "npm version minor"],
+    "postDescription":null
+  }
+]

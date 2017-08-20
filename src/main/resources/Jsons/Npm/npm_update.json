@@ -1,0 +1,15 @@
+[
+  {
+    "title":"NPM : Upgrade",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["If you want to upgrade NPM. Then you have to be a little careful.",
+    "On Windows Open the command prompt as an ADMINISTRATOR ( If not , npm upgradation will be corrupted.",
+    "Then run : npm i npm@latest -g",
+    "Let decode : i means Install , -g  means install globally . So we are asking npm to install the latest version globally",
+    "But all in all ,do this as an Administrator."],
+    "image":null,
+    "code":["npm prune"],
+    "postDescription":null
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "title":"NPM : Registry",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["The npm registry can be found at: https://www.npmjs.com/ .",
+      "It contains all the packages registered at npm.",
+      "You can directly go to the package by appending /package/<package name> to the main URL",
+      "Example below: "],
+    "image":null,
+    "code":["https://www.npmjs.com/package/loadash"],
+    "postDescription":null
+  }
+]

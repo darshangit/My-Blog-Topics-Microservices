@@ -1,0 +1,25 @@
+[
+  {
+    "title":"NPM : Install from Git",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["Consider you have a module for which you do not know the name but it is present has a github repo",
+    "We can install by directly giving the github url"],
+    "image":null,
+    "code":["Example of installing lodash from github: npm install https://github.com/lodash/lodash"],
+    "postDescription":null
+  }
+  ,
+  {
+    "title":"NPM : Install from Gist",
+    "preDescription":null,
+    "note":null,
+    "mainDescription":["Consider you have a gist which you want to add as dependency as test.",
+    "When you open the gist, you will see in the URL its id.",
+    "We have to use this id for installing from gist: npm i gist:<id from the url>.",
+    "In the below example I have highlighted the id of the gist."],
+    "image":"npm_gist.PNG",
+    "code":["npm i gist:c46971e2ee7dbab096213429f7f786db"],
+    "postDescription":null
+  }
+]
