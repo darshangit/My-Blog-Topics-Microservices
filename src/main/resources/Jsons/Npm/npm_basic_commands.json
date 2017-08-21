@@ -26,7 +26,7 @@
     "note":null,
     "mainDescription":["Usually the start command is what we usually give in the package.json.",
     "It is used to get our project running."],
-    "image":"npm_start.PNG",
+    "image":"npm/npm_start.PNG",
     "code":["npm start"],
     "postDescription":["In the above snapshot we can see the test script. Similarly we will have the action for start as well."]
   },
@@ -46,7 +46,7 @@
     "preDescription":null,
     "note":null,
     "mainDescription":["If you want to search across the help pages in npm then : <-- npm help-search <search_string_here> -->."],
-    "image":"npm_help.PNG",
+    "image":"npm/npm_help.PNG",
     "code":["npm help-search update"],
     "postDescription":null
   },
@@ -55,7 +55,7 @@
     "preDescription":null,
     "note":null,
     "mainDescription":["We can set the default values across npm which will be used during npm init.",
-    "For exampleL author_name,author_email,license can be set to default values."],
+    "For example author_name, author_email, license can be set to default values."],
     "image":null,
     "code":["npm set init-author-name 'Dash' ","npm set init_author-email 'asdasd@asdasd.com' "],
     "postDescription":["Post this if we do npm init on any project we will have the default values set in package.json."]
@@ -65,7 +65,7 @@
     "preDescription":null,
     "note":null,
     "mainDescription":["To get the value of a specific default setting: <-- npm get <default_name> -->."],
-    "image":"npm_get.PNG",
+    "image":"npm/npm_get.PNG",
     "code":["npm get init-author-name"],
     "postDescription":null
   },
@@ -73,9 +73,9 @@
     "title":"NPM : Remove Defaults",
     "preDescription":null,
     "note":null,
-    "mainDescription":["To remove the default values set above used: <-- npm config delete <default_name> -->."],
+    "mainDescription":["To remove the default values set above use: <-- npm config delete <default_name> -->."],
     "image":null,
     "code":["npm config delete init-author-name"],
-    "postDescription":["These default setting's can be found under: .npmrc"]
+    "postDescription":["These default setting's can be found under .npmrc"]
   }
 ]

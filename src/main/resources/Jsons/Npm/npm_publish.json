@@ -1,9 +1,9 @@
 [
   {
-    "title":"NPM : Create account in Npm",
+    "title":"NPM : Create account",
     "preDescription":null,
     "note":null,
-    "mainDescription":["Login to https://www.npmjs.com and create an account if you do not have already"],
+    "mainDescription":["Login to https://www.npmjs.com and create an account if you do not have one already."],
     "image":null,
     "code":null,
     "postDescription":null

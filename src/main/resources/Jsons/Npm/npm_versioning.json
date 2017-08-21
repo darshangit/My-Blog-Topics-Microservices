@@ -4,13 +4,13 @@
     "preDescription":null,
     "note":null,
     "mainDescription":["Any npm package will have a version.",
-    "If we check our package.json, we see the version as 1.0.0 . So what does it actually mean.Let us decode it.",
+    "If we check our package.json, we see the version as 1.0.0 . So what does it actually mean. Let us decode it.",
     "1 -> Major version",
     "0 -> Minor Version",
     "0 -> Patch Version"],
     "image":"npm_patch.PNG",
-    "code":[""],
-    "postDescription":[""]
+    "code":null,
+    "postDescription":null
   },
   {
     "title":"NPM : Versioning",
@@ -18,9 +18,9 @@
     "note":null,
     "mainDescription":["Consider we do a patch update on our project. Then the version would become : 1.0.1 . This wont break any functionality but just a fix.",
     "Consider we add a new functionality to our patched project. The version would be : 1.1.1",
-    "Consider we did some groundbreaking changes to our project . the version would be : 2.1.1"],
+    "Consider we did some groundbreaking changes to our project . The version would be : 2.1.1"],
     "image":"",
-    "code":[""],
+    "code":null,
     "postDescription":["Hope the versioning is crystal clear."]
   },
   {
@@ -30,9 +30,9 @@
     "mainDescription":["Lot of times we come across ^ or ~ across in our package.json. Well it certainly must have a meaning, isn't it. Well let us decode it."
     ,"Let us take the below example: ",
     "1. express is at : \"^4.15.4\" . It means install the latest version of the major release that is : 4. ",
-    "2. underscore is at \"~1.8.3\" . It means install the latest version of the minor release. That .8. ",
-    "3. loadash is at \"*\" . It means get the lates version of the package (X) also can be used instead of the astericks."],
-    "image":"npm_tild.PNG",
-    "code":[""],
-    "postDescription":[""]
+    "2. underscore is at \"~1.8.3\" . It means install the latest version of the minor release. That is .8. ",
+    "3. loadash is at \"*\" . It means get the latest version of the package, \"X\" also can be used instead of the astericks."],
+    "image":"npm/npm_tild.PNG",
+    "code":null,
+    "postDescription":null
   }]

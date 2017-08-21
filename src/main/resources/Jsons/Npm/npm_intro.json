@@ -6,7 +6,7 @@
     "mainDescription":["In 3 words : Node Package Manager.",
     "I assume you have a little background on the node platform. NPM is widely used across the community to package.",
       "Npm makes it easy for the developers to share their code to others , so that it can be reused.",
-    "So What is a Package?"],
+    "The haunting question now is, what is a Package?"],
     "image":"",
     "code":null,
     "postDescription":null
@@ -18,7 +18,7 @@
     "mainDescription":["Package is a combination of multiple js files along with a package.json which contains the metadata."
     ,"Consider the express.js package. It consists of js files and a package.json and consists of other packages under node_modules.",
     "In short NPM packages our code and gives us commands to work with it. Kind of a resemblance to Maven build tool."],
-    "image":"node_package.PNG",
+    "image":"npm/node_package.PNG",
     "code":null,
     "postDescription":["Let us look at commands which bundled with NPM."]
   },
@@ -26,13 +26,13 @@
     "title":"NPM : Install NPM",
     "preDescription":null,
     "note":null,
-    "mainDescription":["Npm comes bundled along with node.",
+    "mainDescription":["NPM comes bundled along with node.",
     "Just install node and you would have npm with it.",
       "For Windows/OSX: You can download node from : https://nodejs.org/en/download/ .",
       "For Linux: You can download node from : https://github.com/nodesource/distributions .",
       "<-- npm -v -->, shows the npm installed version."],
-    "image":"node_package.PNG",
+    "image":"npm/node_package.PNG",
     "code":["npm -v"],
-    "postDescription":["Let us look at commands which bundled with NPM."]
+    "postDescription":["Let us look at the commands which come bundled with NPM."]
   }
 ]
